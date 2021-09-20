@@ -1,8 +1,8 @@
 ## TM IO Connect (App template) - ESP RainMaker
 
-This isan  app template designed for IO Connect, and which is based on [ESP RainMaker](https://github.com/espressif/esp-rainmaker), an end-to-end solution offered by Espressif to enable remote control and monitoring for ESP32-S2 and ESP32 based products without any configuration required in the Cloud. 
+This is an  app template designed for IO Connect, and which is based on [ESP RainMaker](https://github.com/espressif/esp-rainmaker), an end-to-end solution offered by Espressif to enable remote control and monitoring for ESP32-S2 and ESP32 based products without any configuration required in the Cloud. 
 
-## All standard devices, types, and params that can be used in IO Connect are shown in this app template.
+### All standard devices, types, and params that can be used in IO Connect are shown in this app template.
 
 ![picture](img/preview.jpg)
 
@@ -23,6 +23,7 @@ Control all of your ESP RainMaker devices with IO Connect Android app.
 ## Development
 
 Prepare [ESP-IDF development environment](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/index.html#get-started-get-prerequisites).
+
 As an alternative, you can use [PlatformIO](https://docs.platformio.org/en/latest/core/installation.html) to build and
 flash the project.
 

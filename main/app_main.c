@@ -361,6 +361,11 @@ static void app_devices_init(esp_rmaker_node_t *node)
     esp_rmaker_node_add_device(node, lock_device);
 	
 	thermostat_device = ioc_thermostat_device_create("Thermostat", NULL, 21);
+	esp_rmaker_param_t *term_float = esp_rmaker_param_create(IOC_DEF_SET_TEMPERATURE_NAME, IOC_PARAM_TEMPERATURE,
+            esp_rmaker_float(25.5), PROP_FLAG_READ | PROP_FLAG_WRITE);
+	esp_rmaker_param_add_ui_type(term_float, IOC_UI_TYPE_KNOB_BTN);
+	esp_rmaker_param_add_bounds(term_float, esp_rmaker_float(15), esp_rmaker_float(30), esp_rmaker_float(1));
+	esp_rmaker_device_add_param(thermostat_device, term_float);
     esp_rmaker_node_add_device(node, thermostat_device);
 	
 	fan_device = ioc_fan_device_create("Fan", NULL, false);

@@ -10,4 +10,4 @@ CMakeListsPrivate.txt
 sdkconfig
 sdkconfig.debug
 sdkconfig.old
-*.lock
+dependencies.lock
